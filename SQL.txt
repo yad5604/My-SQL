@@ -1,0 +1,43 @@
+ /*
+--Creating a table
+CREATE TABLE Employee(
+  ecode integer,
+  ename char(20),
+  gender char,
+  grade char(2),
+  gross decimal);
+ -------------------------------------------------------------------------------
+CREATE TABLE Suppliers(
+SUPP No char,
+Supp_Name char,
+Status int,
+City char);
+
+insert into suppliers values("S1","Brittania",10,"Delhi");
+insert into suppliers values("S2","New Bakers",30,"Mumbai");
+insert into suppliers values("S3","Mother Dairy",10,"Delhi");
+insert into suppliers values("S4","Cookz",50,"Banglore");
+insert into suppliers values("S5","Haldiram",40,"Jaipur");
+
+--------------------------------------------------------------------------------
+create table items (
+Item_no char,
+Item_name char,
+Price float);
+
+insert into items values("I1","Milk",15.00);
+insert into items values("I2","Cake",5.00);
+insert into items values("I3","Bread",9.00);
+insert into items values("I4","Milk Bread",14.00);
+insert into items values("I5","Plain Biscuit",6.00);
+insert into items values("I6","Cream Biscuit",10.00);
+insert into items values("I7","Ice Cream",16.00);
+insert into items values("I8","Cold Drink",8.00);
+insert into items values("I9","Namkeen",15.00);
+-------------------------------------------------------------------------------
+select distinct city from suppliers;
+select all city from suppliers;
+*/
+--select * from suppliers where City <> delhi;------Question
+--select * from suppliers where City in ("delhi","Mumbai","chennai","bangalore");
+--select * from suppliers where City not in ("delhi","Mumbai","chennai");
